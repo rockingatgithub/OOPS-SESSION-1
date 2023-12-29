@@ -6,12 +6,19 @@ public class Customer extends User {
 	int orders[];
 	
 	
-	public Customer (String name, String email, String password, int userID) {
-		super(name, email, password, userID);
+	public Customer (String name, String email, String password) {
+		super(name, email, password);
+//		super();
 	}
+	
+	public Customer () {}
 	
 	public void getCustomer () {
 		System.out.println("Customer data:-"+ this.name + " " + this.email);
+	}
+	
+	public String getUserType () {
+		return "Customer";
 	}
 
 }
